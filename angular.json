@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "exemplo01": {
+    "angular-s3": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/exemplo01",
+            "outputPath": "dist/angular-s3",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "exemplo01:build"
+            "browserTarget": "angular-s3:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "exemplo01:build:production"
+              "browserTarget": "angular-s3:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "exemplo01:build"
+            "browserTarget": "angular-s3:build"
           }
         },
         "test": {
@@ -113,18 +113,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "exemplo01:serve"
+            "devServerTarget": "angular-s3:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "exemplo01:serve:production"
+              "devServerTarget": "angular-s3:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "exemplo01",
+  "defaultProject": "angular-s3",
   "cli": {
     "analytics": "1814505c-d364-44df-8554-066705279340"
   }
